@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.header :nth-child(1) {
+  color: #4aa5e9;
+}
+
+.header :nth-child(2) {
+  color: #002648;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 1000px;
+}
+
+.color {
+  width: 500px;
+  height: 100px;
+  background-color: black;
+}
+
+button {
+  border: 2px solid blue;
+  border-radius: 10%;
+  margin-top: 50px;
+}
