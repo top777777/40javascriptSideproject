@@ -2,12 +2,12 @@ const clickMe = document.querySelector("button");
 const color = document.querySelector(".color");
 const screen = document.querySelector(".screen");
 const colors = ["red", "blue", "green"];
-const result = colors[Math.floor(Math.random() * colors.length)];
-console.log(result);
 
-function changeColor() {
+clickMe.addEventListener("click", function () {
+  const result = colors[Math.floor(Math.random() * colors.length)];
+
   screen.style.backgroundColor = result;
-  color.innerText = `Background Color : ${result}`;
-}
+  console.log(result);
 
-clickMe.addEventListener("click", changeColor);
+  color.innerText = `Background Color : ${result}`;
+});
